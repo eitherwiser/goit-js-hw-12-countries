@@ -44,7 +44,7 @@ input {
   font-size: 16px;
 }
 
-img {
+.card-img {
   border: 1px solid;
   border-color: black;
   display: block;
