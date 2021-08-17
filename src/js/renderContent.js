@@ -12,18 +12,15 @@ function renderResult(data, template) {
 
 export default function renderContent(data) {
   showResult.innerHTML = '';
-  if (data.length > 2 && data.length < 10) {
+  if (data.length === 1) {
     successNotice();
-    return renderResult(data, countriesList);
+    renderResult(data, countryCard);
   }
-  else if (data.length === 1) {
+  else if (data.length >= 2 && data.length < 10) {
     successNotice();
-    return renderResult(data, countryCard);
+    renderResult(data, countriesList);
   }
-  else if (data.length > 10) {
-    return warningNotice();
-  }
-  else if (data.status === 404) {
-    return errorNotice();
+  else {
+    warningNotice();
   }
 };
