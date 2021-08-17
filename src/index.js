@@ -6,11 +6,7 @@ import { errorNotice } from './js/notifications';
 
 export default function searchCountries(e) {
   fetchCountries(e.target.value)
-    .then((data) => {
-      return renderContent(data);
-
-    })
-    .then((data) => console.log(data))
+    .then(data => renderContent(data))
     .catch((error) => errorNotice());
 };
 

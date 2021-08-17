@@ -3,8 +3,8 @@ input {
   font-family: Georgia, 'Times New Roman', Times, serif;
   font-size: 18px;
   font-weight: 400;
-  color: rgb(27, 64, 124);
-  background-color: rgb(234, 236, 236);
+  color: rgb(50, 70, 90);
+  background-color: azure;
 }
 
 input {
@@ -12,7 +12,6 @@ input {
   height: 40px;
   font-size: 26px;
   font-weight: 500;
-  background-color: azure;
 }
 
 .search,
